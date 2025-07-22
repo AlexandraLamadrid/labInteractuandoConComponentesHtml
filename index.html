@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Intereses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="encuesta">
+    <h1>¿Qué te interesa más?</h1>
+    <div class="opciones">
+      <button onclick="votar('diseno')">Diseño Web</button>
+      <button onclick="votar('js')">JavaScript</button>
+      <button onclick="votar('bd')">Bases de Datos</button>
+    </div>
+
+    <div class="resultados">
+      <p>Diseño Web: <span id="votos-diseno">0</span> votos</p>
+      <p>JavaScript: <span id="votos-js">0</span> votos</p>
+      <p>Bases de Datos: <span id="votos-bd">0</span> votos</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

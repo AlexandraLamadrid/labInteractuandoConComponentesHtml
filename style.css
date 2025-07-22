@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.encuesta {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #5e60ce;
+  margin-bottom: 20px;
+}
+
+.opciones button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #5e60ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.opciones button:hover {
+  background: #3a3e9b;
+}
+
+.resultados {
+  margin-top: 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="carrito-container">
+    <h1>Carrito de Compras</h1>
+
+    <div class="producto">
+      <p>Producto: <strong>Mouse Gamer</strong></p>
+      <p>Precio: $<span>20</span></p>
+      <button onclick="agregarAlCarrito('Mouse Gamer', 20)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <p>Producto: <strong>Teclado Mecánico</strong></p>
+      <p>Precio: $<span>30</span></p>
+      <button onclick="agregarAlCarrito('Teclado Mecánico', 30)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <p>Producto: <strong>Auriculares Bluetooth</strong></p>
+      <p>Precio: $<span>25</span></p>
+      <button onclick="agregarAlCarrito('Auriculares Bluetooth', 25)">Agregar al carrito</button>
+    </div>
+
+    <div class="resumen">
+      <p>Ítems en carrito: <span id="total-items">0</span></p>
+      <p>Total a pagar: $<span id="total-precio">0</span></p>
+      <p><strong>Productos en el carrito:</strong></p>
+      <ul id="lista-productos"></ul>
+      <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
